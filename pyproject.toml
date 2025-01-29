@@ -17,11 +17,12 @@ packages = ["brain_games"]
 
 [dependency-groups]
 dev = [
+    "asciinema>=2.4.0",
     "ruff>=0.9.3",
 ]
 
 
-
 [project.scripts]
+brain-even = "brain_games.scripts.brain_even:main"
 brain-games = "brain_games.scripts.brain_games:main"
 

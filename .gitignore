@@ -1,2 +1,6 @@
 .venv
 __pycache__
+.ruff_cache
+brain_games/scripts/__pycache__/brain_games.cpython-313.pyc
+demo.cast
+
