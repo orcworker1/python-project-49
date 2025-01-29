@@ -1,14 +1,14 @@
 
-install: #Эта команда полезна при первом клонировании репозитория или после удаления зависимостей
+install: 
 	uv sync
 
 
-brain-games: #Запуск игры 
+brain-games: 
 	uv run brain-games
 
 
-build: # Собрать пакет
+build: 
 	uv build
 
-package-install: #Установить пакет 
+package-install: 
 	uv tool install dist/*.whl
