@@ -7,6 +7,9 @@ brain-even:
 brain-calc:
 	uv run brain-calc
 
+brain-gcd:
+	uv run brain-gcd
+
 brain-games: 
 	uv run brain-games
 
