@@ -3,4 +3,7 @@ __pycache__
 .ruff_cache
 brain_games/scripts/__pycache__/brain_games.cpython-313.pyc
 demo.cast
-
+.DS_Store
+brain_games/.DS_Store
+brain_games/scripts/.DS_Store
+brain_games/scripts/__pycache__/brain_games.cpython-313.pyc
