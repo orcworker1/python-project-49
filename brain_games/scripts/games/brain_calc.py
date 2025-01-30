@@ -1,16 +1,6 @@
-import random
-
 import prompt
 
-from brain_games.cli import welcome_user
-
-
-def random_value():
-    return random.randint(1, 100)
-
-
-def random_operand():
-    return random.choice('+-*')
+from brain_games.cli import random_operand, random_value, welcome_user
 
 
 def calc():
