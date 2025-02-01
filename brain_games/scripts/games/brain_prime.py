@@ -17,7 +17,7 @@ def is_prime(numbers):
     
 def main():
     name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
     game_count = 3
     while game_count != 0:
         number = random_value()
