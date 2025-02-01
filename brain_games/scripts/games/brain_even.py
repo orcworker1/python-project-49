@@ -19,7 +19,7 @@ def random_number():
 def main():
     count = 3
     name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
     while count != 0:
         number = random_number()
         answer = prompt.string(f'Question: {number}\n'
