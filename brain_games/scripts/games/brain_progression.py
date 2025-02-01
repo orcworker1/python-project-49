@@ -7,20 +7,22 @@ from brain_games.cli import welcome_user
 
 def list_numbers():
     new_list = []
-    start = random.randint(1,100)
-    step = random.randint(2,5)
-    lenght = random.randint(5,10)
-    for i in range(0,lenght):
+    start = random.randint(1, 100)
+    step = random.randint(2, 5)
+    lenght = random.randint(5, 10)
+    for i in range(0, lenght):
         new_list.append(start + i * step)
     return new_list   
     
-#print(' '.join(str(el) for el in lst))
-def str_list(number:list):
-    return ' '.join(map(str,number))
 
-def random_index(numbers:list):
+def str_list(number):
+    return ' '.join(map(str, number))
+
+
+def random_index(numbers):
     len_numbers = len(numbers)
-    return random.randint(0,len_numbers - 1)
+    return random.randint(0, len_numbers - 1)
+
 
 def main():
     name = welcome_user()
