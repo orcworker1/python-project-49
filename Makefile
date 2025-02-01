@@ -13,6 +13,9 @@ brain-gcd:
 brain-progression:
 	uv run brain-progression
 
+brain-prime:
+	uv run brain-prime
+
 brain-games: 
 	uv run brain-games
 
