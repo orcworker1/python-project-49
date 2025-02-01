@@ -23,7 +23,7 @@ def main():
     while count != 0:
         number = random_number()
         answer = prompt.string(f'Question: {number}\n'
-                                f'Your unswer : ')
+                                f'Your unswer: ')
         if is_even(number) and answer == 'yes':
             print('Correct!')
         elif not is_even(number) and answer == 'no':
