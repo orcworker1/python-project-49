@@ -21,7 +21,7 @@ def calc():
         elif operand == '*':
             result = number_1 * number_2
         if result == answer:
-            print('Corrrect!')
+            print('Correct!')
         else: 
             return print(f'{answer} is wrong answer ;(. Correct answer was.'
                         f"{result} \n"
