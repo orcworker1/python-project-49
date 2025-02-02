@@ -1,6 +1,6 @@
 import prompt
 
-from brain_games.cli import welcome_user , random_value
+from brain_games.cli import welcome_user, random_value
 
 
 def is_even(number):
@@ -8,8 +8,6 @@ def is_even(number):
         return True
     else:
         return False
-
-
 
 
 def main():
