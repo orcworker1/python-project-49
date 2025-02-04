@@ -11,10 +11,10 @@ def is_even(number):
 
 
 def main():
-    count = 3
+    game_count = 3
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    while count != 0:
+    while game_count != 0:
         number = random_value()
         answer = prompt.string(f'Question: {number}\n'
                                 f'Your answer: ')
@@ -29,7 +29,7 @@ def main():
             else:
                 return (f"'no' is wrong answer ;(. Correct answer was 'yes'.\n"
                        f"Let's try again, {name}")
-        count -= 1
+        game_count -= 1
     return f'Congratulations, {name}!'
 
 
