@@ -22,11 +22,14 @@ def calc():
             result = number_1 * number_2
         if result == answer:
             print('Correct!')
-        else: 
-            return print(f'{answer} is wrong answer ;(. Correct answer was.'
-                        f"{result} \n"
-                        f"Let's try again, {name} ")
-    print(f'Congratulations, {name}!')
+        else:
+            game_count = -1
+            print(f'{answer} is wrong answer ;(. Correct answer was '
+                    f"'{result}'.\n"
+                    f"Let's try again, {name}!")
+            break
+    if game_count == 0:
+        print(f'Congratulations, {name}!')
 
 
 def main():
