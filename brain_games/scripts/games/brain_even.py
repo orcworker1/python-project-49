@@ -30,7 +30,7 @@ def main():
                 return (f"'no' is wrong answer ;(. Correct answer was 'yes'.\n"
                        f"Let's try again, {name}")
         game_count -= 1
-    return f'Congratulations, {name}!'
+    print(f'Congratulations, {name}!')
 
 
 if __name__ == "__main__":
