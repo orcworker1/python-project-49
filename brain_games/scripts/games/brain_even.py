@@ -26,12 +26,12 @@ def main():
         else:
             if answer == 'yes':
                 print (f"'yes' is wrong answer ;(. Correct answer was 'no'.\n"
-                       f"Let's try again, {name}")
+                       f"Let's try again, {name}!")
                 game_count = -1
                 break
             else:
                 print (f"'no' is wrong answer ;(. Correct answer was 'yes'.\n"
-                       f"Let's try again, {name}")
+                       f"Let's try again, {name}!")
                 game_count = -1
                 break
     if game_count == 0:
