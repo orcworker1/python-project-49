@@ -33,16 +33,20 @@ def main():
         index_random = random_index(inv_list)
         corect_value = inv_list[index_random]
         inv_list[index_random] = '..'
+        str_numbers = str_list(inv_list)
         game_cout -= 1
-        answer = prompt.integer(f'Qustion: {(str_list(inv_list))}\n'
+        answer = prompt.integer(f'Qustion: {str_numbers}\n'
                                 f'Your answer: ')
         if answer == corect_value:
             print('Correct!')
         else:
-            return print(f'{answer} is wrong answer ;(. Correct answer was: '
+            game_cout = -1
+            print(f'{answer} is wrong answer ;(. Correct answer was: '
                         f"'{corect_value}' \n"
                         f"Let's try again, {name}!")
-    print(f'Congratulations, {name}!')
+            break
+    if game_cout == 0:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
