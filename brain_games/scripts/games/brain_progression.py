@@ -35,7 +35,7 @@ def main():
         inv_list[index_random] = '..'
         str_numbers = str_list(inv_list)
         game_cout -= 1
-        answer = prompt.integer(f'Qustion: {str_numbers}\n'
+        answer = prompt.integer(f'Question: {str_numbers}\n'
                                 f'Your answer: ')
         if answer == corect_value:
             print('Correct!')
