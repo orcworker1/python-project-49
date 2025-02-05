@@ -30,7 +30,8 @@ def main():
                    f"Correct answer was '{result}'.\n"
                    f"Let's try again, {name}!") 
             break
-    print(f'Congratulations, {name}!')  
+    if game_count == 0:    
+        print(f'Congratulations, {name}!')  
 
 
 if __name__ == '__main__':
