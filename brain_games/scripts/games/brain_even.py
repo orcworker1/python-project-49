@@ -15,6 +15,7 @@ def main():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while game_count != 0:
+        game_count -= 1
         number = random_value()
         answer = prompt.string(f'Question: {number}\n'
                                 f'Your answer: ')
@@ -24,13 +25,20 @@ def main():
             print('Correct!')
         else:
             if answer == 'yes':
-                return (f"'yes' is wrong answer ;(. Correct answer was 'no'.\n"
+                print (f"'yes' is wrong answer ;(. Correct answer was 'no'.\n"
                        f"Let's try again, {name}")
+                game_count = -1
+                break
             else:
-                return (f"'no' is wrong answer ;(. Correct answer was 'yes'.\n"
+                print (f"'no' is wrong answer ;(. Correct answer was 'yes'.\n"
                        f"Let's try again, {name}")
-        game_count -= 1
-    print(f'Congratulations, {name}!')
+                game_count = -1
+                break
+    if game_count == 0:
+        print(f'Congratulations, {name}!')
+            
+        #game_count -= 1
+   # print(f'Congratulations, {name}!')
 
 
 if __name__ == "__main__":
