@@ -42,8 +42,8 @@ def main():
         else:
             game_cout = -1
             print(f'{answer} is wrong answer ;(. Correct answer was: '
-                        f"'{corect_value}' \n"
-                        f"Let's try again, {name}!")
+                  f"'{corect_value}' \n"
+                  f"Let's try again, {name}!")
             break
     if game_cout == 0:
         print(f'Congratulations, {name}!')

@@ -1,6 +1,6 @@
 import prompt
 
-from brain_games.cli import welcome_user, random_value
+from brain_games.cli import random_value, welcome_user
 
 
 def is_even(number):
@@ -25,20 +25,17 @@ def main():
             print('Correct!')
         else:
             if answer == 'yes':
-                print (f"'yes' is wrong answer ;(. Correct answer was 'no'.\n"
-                       f"Let's try again, {name}!")
+                print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\n"
+                      f"Let's try again, {name}!")
                 game_count = -1
                 break
             else:
-                print (f"'no' is wrong answer ;(. Correct answer was 'yes'.\n"
-                       f"Let's try again, {name}!")
+                print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\n"
+                      f"Let's try again, {name}!")
                 game_count = -1
                 break
     if game_count == 0:
         print(f'Congratulations, {name}!')
-            
-        #game_count -= 1
-   # print(f'Congratulations, {name}!')
 
 
 if __name__ == "__main__":

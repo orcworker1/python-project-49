@@ -31,15 +31,16 @@ def main():
         else:
             game_count = -1
             if answer == 'yes':
-                print (f"'{answer}' is wrong answer ;(."
-                        f"Correct answer was 'no'.\n"
-                        f"Let's try again, {name}!")
+                print(f"'{answer}' is wrong answer ;(."
+                      f"Correct answer was 'no'.\n"
+                      f"Let's try again, {name}!")
             else:
-                print (f"'{answer}' is wrong answer ;(."
-                       f"Correct answer was 'yes'.\n"
-                       f"Let's try again, {name}!")
-            break    
-    if game_count == 0 :
+                print(f"'{answer}' is wrong answer ;(."
+                      f"Correct answer was 'yes'.\n"
+                      f"Let's try again, {name}!")
+                break 
+               
+    if game_count == 0:
         print(f'Congratulations, {name}!')        
 
 

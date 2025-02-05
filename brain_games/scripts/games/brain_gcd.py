@@ -26,9 +26,9 @@ def main():
             print('Correct!')
         else:
             game_count = -1
-            print (f"'{answer}' is wrong answer ;(."
-                   f"Correct answer was '{result}'.\n"
-                   f"Let's try again, {name}!") 
+            print(f"'{answer}' is wrong answer ;(."
+                  f"Correct answer was '{result}'.\n"
+                  f"Let's try again, {name}!") 
             break
     if game_count == 0:    
         print(f'Congratulations, {name}!')  
