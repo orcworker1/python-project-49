@@ -38,6 +38,7 @@ def main():
                 print (f"'{answer}' is wrong answer ;(."
                        f"Correct answer was 'yes'.\n"
                        f"Let's try again, {name}!")
+            break    
     if game_count == 0 :
         print(f'Congratulations, {name}!')        
 
