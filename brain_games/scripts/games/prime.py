@@ -14,8 +14,9 @@ def is_prime(numbers):
         return False
     return True
 
+
 def generate_round():
-    random_number = random.randint(1,100)
+    random_number = random.randint(1, 100)
     if is_prime(random_number):
         correct_answer = 'yes'
     else:
