@@ -11,16 +11,15 @@ def is_prime(numbers):
         if numbers % i == 0:
             count += 1
     if count > 2:
-        return False
-    return True
+        correct_answer = 'no'
+    else:
+        correct_answer = 'yes'
+    return correct_answer
 
 
 def generate_round():
     random_number = random.randint(1, 100)
-    if is_prime(random_number):
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
+    correct_answer = is_prime(random_number)
     return random_number, correct_answer   
 
 
